@@ -2,8 +2,9 @@
 // captcha link - https://www.google.com/recaptcha/admin/create
 
 let capthachecked = false;
+function beforesubmit(event){
 if(capthachecked){
-    function beforesubmit(event){
+    
         let outputdate = document.querySelector(".outputdate");
         let inputdate = document.querySelector(".inputdate");
         console.log("inputdate.value", inputdate.value);
